@@ -15,7 +15,9 @@ const RaceList = ({races, onRaceSelected}) => {
             });
 
         return (
-            <li key={name} onClick={() => {onRaceSelected(race)}}><Race name={name} date={formattedDate}/></li>
+            <li key={name} onClick={() => {onRaceSelected(race)}}>
+                <Race name={name} date={formattedDate}/>
+            </li>
         )
     });
 
