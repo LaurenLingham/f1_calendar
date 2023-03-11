@@ -13,10 +13,11 @@ const RaceDetails = ({race, onRaceSelected}) => {
     return (
         <div className="race-details">
             <h1>Race Details</h1>
-            <h2>{race.raceName}</h2>
-            <p><b>Round:</b> {race.round}</p>
-            <p><b>Circuit:</b> {race.Circuit.circuitName}</p>
-            <button onClick={handleBackButtonClicked}>Back</button>
+            <p><b>Round {race.round}</b></p>
+            <h2>{race.date}</h2>
+            <h3>{race.raceName}</h3>
+            <p>{race.Circuit.circuitName}</p>
+            <button onClick={handleBackButtonClicked}>Back to Race Calendar</button>
         </div>
     )
 }
